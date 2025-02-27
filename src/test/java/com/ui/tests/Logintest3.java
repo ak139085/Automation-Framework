@@ -31,7 +31,7 @@ public class Logintest3 {
 	}
 
 	@Test(description = "Verifies with the valid user is able to login into the application", groups = { "e2e",
-			"sanity" }, dataProviderClass = com.ui.DataProvider.Logindataprovider.class, dataProvider = "LoginTestCSVdataproviders")
+			"sanity" }, dataProviderClass = com.ui.DataProvider.Logindataprovider.class, dataProvider = "LoginTestCSVdataproviders", retryAnalyzer=com.ui.listeners.MyRetryAnalyser.class)
 	public void LoginCSVTest(user user)
 
 	{
@@ -42,7 +42,7 @@ public class Logintest3 {
 	}
 
 	@Test(description = "Verifies with the valid user is able to login into the application", groups = { "e2e",
-			"sanity" }, dataProviderClass = com.ui.DataProvider.Logindataprovider.class, dataProvider = "LoginTestExceldataproviders")
+			"sanity" }, dataProviderClass = com.ui.DataProvider.Logindataprovider.class, dataProvider = "LoginTestExceldataproviders", retryAnalyzer=com.ui.listeners.MyRetryAnalyser.class)
 	public void LoginExcelTest(user user)
 
 	{

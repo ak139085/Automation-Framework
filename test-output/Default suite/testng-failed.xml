@@ -5,7 +5,7 @@
     <classes>
       <class name="com.ui.tests.Logintest3">
         <methods>
-          <include name="LoginTest1" invocation-numbers="1"/>
+          <include name="LoginCSVTest" invocation-numbers="1 1 1 1"/>
           <include name="setup"/>
         </methods>
       </class> <!-- com.ui.tests.Logintest3 -->
